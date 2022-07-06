@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Finlandica', sans-serif;
+}
+body{
+    background-color: antiquewhite;
+}
+h1{
+    text-align: center;
+    font-size: 300%;
+    padding: 34px;
+}
+.table{
+    border: 1px solid rgb(14, 14, 14);
+    background-color: rgb(182, 158, 126);
+    padding: 0 0 1% 1%;
+    margin: 1.5em;
+    width: 28.495%;
+    float: left;
+    
+    text-align: center;
+}
+.heading{
+    width: 40%;
+    display: inline;
+    float: right;
+    clear: both;   
+}
+h3{
+    border: 1px solid rgb(14, 14, 14);
+    border-top: 0;
+    border-right: 0;
+    padding: 1%;
+    font-size:175% ; 
+}
+#_1 h3{
+    background-color: rgb(229, 166, 166);
+}
+#_2 h3{
+    background-color: rgb(235, 57, 41);
+}
+#_3 h3{
+    background-color: rgb(225, 224, 193);
+}
+p{
+    clear: both;
+    font-size: 125%;
+}
+@media screen and (max-width: 769px)
+{
+    .table{
+        clear: both;
+        width: auto;
+    }
+}
+@media screen and (max-width: 992px) and (min-width: 843px)
+{
+    #_1,#_2{
+        width: 44.3%;
+    }
+    #_3{
+        width: auto;
+    }
+}
+@media screen and (max-width: 843px) and (min-width: 769px)
+{
+    #_1,#_2{
+        width: 43.5%;
+    }
+    #_3{
+        width: auto;
+    }
+}
