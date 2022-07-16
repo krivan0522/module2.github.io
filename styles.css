@@ -8,69 +8,88 @@
 body{
     background-color: antiquewhite;
 }
-h1{
-    text-align: center;
-    font-size: 300%;
-    padding: 34px;
-}
-.table{
-    border: 1px solid rgb(14, 14, 14);
-    background-color: rgb(182, 158, 126);
-    padding: 0 0 1% 1%;
-    margin: 1.5em;
-    width: 28.495%;
-    float: left;
+.brand{
+    font-weight: bold;
+    margin-left: 30px;
     
-    text-align: center;
 }
-.heading{
-    width: 40%;
-    display: inline;
-    float: right;
-    clear: both;   
+.navbar{
+    border-radius: 0;
+    background-color: #ff8989;
+
+}
+.navbar-brand{
+    color: black;
+    font-size: 2em;
+    font-style: normal;
+}
+.navbar-header{
+    color: black;
+}
+h1{
+    font-size: 3em;
+    padding: 34px;
+    text-decoration: overline underline;
 }
 h3{
-    border: 1px solid rgb(14, 14, 14);
-    border-top: 0;
-    border-right: 0;
-    padding: 1%;
-    font-size:175% ; 
+    margin-top: 0;
 }
-#_1 h3{
-    background-color: rgb(229, 166, 166);
+.boxstyling{
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+    height: 1000px;
+    width: 300px;
+    background-color: burlywood;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
 }
-#_2 h3{
-    background-color: rgb(235, 57, 41);
+button{
+    color:black;
+    border: 2px solid black;
+    border-radius: 0;
 }
-#_3 h3{
-    background-color: rgb(225, 224, 193);
+.nav-link{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 800;
+    color: black;
+    border: 1px solid;
 }
-p{
-    clear: both;
-    font-size: 125%;
+.nav-link:hover{
+    background-color: aliceblue;
 }
-@media screen and (max-width: 769px)
-{
-    .table{
-        clear: both;
-        width: auto;
+.nav-content{
+    background-color: #ff9d00;
+}
+
+@media (min-width:1346px){
+    .boxstyling{
+        width: 30%;
     }
 }
-@media screen and (max-width: 992px) and (min-width: 843px)
-{
+@media (min-width:991px)and (max-width:1345px) {
+    .boxstyling{
+        width:300px auto;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
     #_1,#_2{
-        width: 44.3%;
+        width:300px;
+    }
+    #_1{
+        margin-right: auto;
     }
     #_3{
-        width: auto;
+        width: 92%;
     }
 }
-@media screen and (max-width: 843px) and (min-width: 769px)
-{
-    #_1,#_2{
-        width: 43.5%;
-    }
-    #_3{
-        width: auto;
+@media (max-width:768px){
+    .boxstyling{
+        width: 100%;
     }
 }
